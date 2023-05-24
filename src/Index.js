@@ -9,6 +9,7 @@ import AnimalSrc from "./screens/AnimalSrc";
 import PessoaSrc from "./screens/PessoaSrc";
 import CarroSrc from "./screens/CarroSrc";
 import ProdutoSrc from "./screens/ProdutoSrc";
+import IncluirPessoa from "./screens/adicionarFruta";
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +52,7 @@ function TabsNavigator() {
       <Tabs.Screen name="Frutas" component={FrutaSrc} />
       <Tabs.Screen name="Pessoas" component={PessoaSrc} />
       <Tabs.Screen name="Carros" component={CarroSrc} />
+      <Tabs.Screen name="Adicionar Frutas" component={IncluirPessoa} />
     </Tabs.Navigator>
   );
 }

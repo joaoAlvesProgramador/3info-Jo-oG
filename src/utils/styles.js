@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
         borderBottomWidth:3,
     },
     theme:{
-        color:'#88f',
+        color:'#000',
         marginBottom:5,
         fontSize:18,
-        fontWeight:'normal',
+        fontWeight:'bold',
     },
     textH:{
         fontWeight:'bold',
@@ -26,6 +26,13 @@ const styles = StyleSheet.create({
         height:80,
         backgroundColor:'#88f',
         paddingTop:10,
+        marginBottom:20,
+    },
+    headerH:{
+        width:'100%',
+        height:80,
+        backgroundColor:'#88f',
+        paddingTop:10,
     },
     boxP:{
         width:'70%',
@@ -34,7 +41,15 @@ const styles = StyleSheet.create({
         backgroundColor:'#fff',
         alignItems:'center',
         borderRadius:8,
-    }
+    },
+    boxA:{
+        width:'70%',
+        height:230,
+        marginTop:10,
+        backgroundColor:'#fff',
+        alignItems:'center',
+        borderRadius:8,
+    },
 });
 
 export default styles;

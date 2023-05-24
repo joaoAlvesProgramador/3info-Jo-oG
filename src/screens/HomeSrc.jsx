@@ -14,31 +14,43 @@ export default function HomeSrc({ navigation }) {
         height: '100%',
       }}
     >
-     <View style={styles.header}> 
+     <View style={styles.headerH}> 
       <Text style={{ fontSize: 30 , marginBottom:10, }}>Página Inicial</Text>
      </View>  
 
       <View style={styles.boxP}>
         <Text style={styles.textH}>
-          Pesquise seus produtos
+        <Text> Pesquise seus produtos </Text>
         </Text>
         <TouchableOpacity style={styles.theme} onPress={() => navigation.navigate("Produtos")}>
-          Produtos
+        <Text> Produtos</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.theme} onPress={() => navigation.navigate("Cores")}>
-          Cores
+        <Text> Cores</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.theme} onPress={() => navigation.navigate("Animais")}>
-          Animais
+        <Text> Animais</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.theme} onPress={() => navigation.navigate("Frutas")}>
-          Frutas
+        <Text>  Frutas</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.theme} onPress={() => navigation.navigate("Pessoas")}>
-          Pessoas
+        <Text> Pessoas</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.theme} onPress={() => navigation.navigate("Carros")}>
-          Carros
+        <Text> Carros</Text>
+        </TouchableOpacity>
+        
+      </View>
+
+      {/* Adicionei */}
+
+      <View style={styles.boxA}>
+        <Text style={styles.textH}>
+          Adicione seus produtos
+        </Text>
+        <TouchableOpacity style={styles.theme} onPress={() => navigation.navigate("Adicionar Frutas")}>
+          <Text>Adicionar Frutas</Text>
         </TouchableOpacity>
       </View>
 

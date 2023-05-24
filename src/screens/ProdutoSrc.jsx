@@ -37,10 +37,10 @@ export default function ProdutoSrc() {
   }, [NomeDoProduto]);
 
   return (
-    <View style={{ paddingTop: 100, alignItems: "center" }}>
-      <Text style={{ textAlign: "center", paddingBottom: 10, fontSize: 30 }}>
-        Buscar Produto
-      </Text>
+    <View style={{ alignItems: "center" }}>
+      <View style={styles.header}> 
+        <Text style={{ fontSize: 30 ,  textAlign:'center', }}>Buscar Produto</Text>
+    </View>
       {/* abacaxi */}
       <TextInput
         style={styles.input}

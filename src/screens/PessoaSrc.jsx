@@ -36,10 +36,10 @@ export default function PessoaSrc() {
   }, [nomePessoa]);
 
   return (
-    <View style={{ paddingTop: 100, alignItems: "center" }}>
-      <Text style={{ textAlign: "center", paddingBottom: 10, fontSize: 30 }}>
-        Buscar Pessoa
-      </Text>{" "}
+    <View style={{ alignItems: "center" }}>
+      <View style={styles.header}> 
+        <Text style={{ fontSize: 30 ,  textAlign:'center', }}>Buscar Pessoa</Text>
+    </View>
       <TextInput
         style={styles.input}
         label="Nome da Pessoa"
