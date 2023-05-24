@@ -55,9 +55,9 @@ export default function CarroSrc() {
 <FlatList
         data={Carro}
         renderItem={({ item }) => (
-          <Text key="item.id">{item.NomeCarro}</Text>
+          <Text key={item.id}>{item.NomeCarro}</Text>
         )}
-        keyExtractor={(item) => item.id}
+        // keyExtractor={(item) => item.id}
       />
     </View>
   );

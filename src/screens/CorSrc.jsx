@@ -51,9 +51,9 @@ export default function CorSrc() {
       <FlatList
         data={Cor}
         renderItem={({ item }) => (
-          <Text key="item.id">{item.NomeCor}</Text>
+          <Text key={item.id}>{item.NomeCor}</Text>
         )}
-        keyExtractor={(item) => item.id}
+        // keyExtractor={(item) => item.id}
       />
     </View>
   );

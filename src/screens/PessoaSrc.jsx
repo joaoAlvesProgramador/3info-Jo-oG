@@ -49,9 +49,9 @@ export default function PessoaSrc() {
       <FlatList
         data={Pessoa}
         renderItem={({ item }) => (
-          <Text key="item.id">{item.NomePessoa}</Text>
+          <Text key={item.id}>{item.NomePessoa}</Text>
         )}
-        keyExtractor={(item) => item.id}
+        // keyExtractor={(item) => item.id}
       />
     </View>
   );

@@ -47,10 +47,11 @@ export default function FrutaSrc() {
       <FlatList
         data={Fruta}
         renderItem={({ item }) => (
-          <Text key="item.id">{item.NomeFruta}</Text>
+          <Text key={item.id}>{item.NomeFruta}</Text>
         )}
-        keyExtractor={(item) => item.id}
+        // keyExtractor={(item) => item.id}
       />
     </View>
   );
 }
+
